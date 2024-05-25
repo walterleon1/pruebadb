@@ -24,7 +24,7 @@ $con = conexion();
                     
                         <br>
 
-                     <a class="nav-link" href="listar.php">Listar <span class="sr-only"></span></a>
+                     <a class"nav-link" href="listar.php">Listar <span class="sr-only"></span></a>
                      </li>
                 </ul>
             </div>
@@ -50,7 +50,7 @@ $con = conexion();
                 </thead>
                 <tbody>
                 <?php
-                 $sql = "select * from persona";
+                 $sql = "select * from persona order by idpersona asc";
                  $obj = pg_query($con, $sql);
                  $i = 0;
                  while ($columna = pg_fetch_array($obj)) {
